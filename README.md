@@ -55,7 +55,48 @@
 </ul>
 
 <p>Примеры кода:</p>
-<code></code>
+<code>$name = 'Bob';
+echo "Hello, {$name}!";</code>
+</br></br>
+<code>$age = 10;
+echo "I am {$age} years old";</code>
+</br></br>
+<code>$text = 'abcde';
+echo $text[0] . $text[2] . $text[4];</code>
+</br></br>
+<code>$text = 'abcde';
+$text[0] = '!';
+echo $text;</code>
+</br></br>
+<code>$num = '12345';
+for($i = 0, $sum = 0; $i < strlen($num); $i++)
+    $sum += intval($num[$i]); 
+echo $sum;</code>
+</br></br>
+<code>$hour = 60 * 60;
+$day = $hour * 24;
+$month = $day * 30;
+echo $hour . " seconds\n";
+echo $day . " seconds\n";
+echo $month . "-" . $month + $day . " seconds";</code>
+</br></br>
+<code>$hr = date('H');
+$min = date('i');
+$sec = date('s');
+echo "{$hr}:{$min}:{$sec}";</code>
+</br></br>
+<code>$var = 47;
+$var = $var + 7;
+$var = $var - 18;
+$var = $var * 10;
+$var = $var / 20;
+echo $var . "\n";
+$var = 47;
+$var += 7;
+$var -= 18;
+$var *= 10;
+$var /= 20;
+echo $var;</code>
 </br></br>
 <h1 align = "center">Вывод</h1>
 <p>В результате проделанной лабораторной работы, я познакомилась с новыми элементами языка PHP и попрактиковалась в решении задач.</p>
